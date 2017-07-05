@@ -1,15 +1,19 @@
 language: ruby
 sudo: false
 rvm:
-  - 2.3.3
-#  - 2.2
-#  - 2.1
-script: "bundle exec rake"
+- 2.3.3
+script: bundle exec rake
 before_install:
- - gem update bundler
+- gem update bundler
 notifications:
   email:
     recipients:
-      - pmcevoy@logit.io
+    - pmcevoy@logit.io
     on_success: change
     on_failure: change
+deploy:
+  provider: rubygems
+  api_key:
+    secure: jcELEdmihHz+DRfyphNzfFqlaBUp84ZFIOaWKfNBoFHu2STod5YOVWAqC97ebGSixWxkHzO8mdr1vMOQOA70mgmunL3IF3G43Z6VoJuN69HFCTbdtdPO0731Pt7ldKwz6q6LQCJ91/TUIw0Cg0Nn4LqRH6AR4cXs07pKOQKeV5cA7AZP2royUzP4UUEY5c+rS0X/ki0BW14Sn56gUQ/LIGJ1jIJyNLU7G5gM3pyAp86A8x3/kjBm/5ifVnYLcUulOjoNJcxXbVeQK7E9So988mDgvHfVMiKADaKJBsg8Hed+f/S2EjFf5QQ6ZclZiHxFmq/Cx8HTMyd0yrh+imS6dLHvy84G3tqE0rSkxHSPV4o8qCW3jjA8JPX7nwKavxgnuSD3iIJJlw2rRHK15kXWQ4oWtDN65khs//fxNEHaSrY/b1MHwTthkVYZ4PwY5EQ5xvH8uZAdzFm9meDd+HkoMXqfooOeQwyXe8gpLJhqDWU4q+ZGjE0huDm0VkZRRWYC/0rXal8FJd2n7Pa2IjjTOq1iYv0FxcJExKdko55bLDQzMRNMNTbyvEIpAUVw/aHXzG+fPQsSivNb7JN+W3qB1f4L50A+vxqUO0YIXkAZ4NpaBaQMAMLMceKqxXstNmtSCyLBJMjilPDhaKk20FCYDvKFMVrrqCsvgZHARRcdXnQ=
+  on:
+    tags: true
