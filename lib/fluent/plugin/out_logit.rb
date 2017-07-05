@@ -1,7 +1,10 @@
 # coding: utf-8
+
+require 'fluent/output'
+
 module Fluent
   class LogitOutput < BufferedOutput
-    Plugin.register_output('logit', self)
+    Fluent::Plugin.register_output('logit', self)
 
     def initialize
       super
