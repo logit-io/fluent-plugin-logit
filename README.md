@@ -1,5 +1,7 @@
 # Fluentd output plugin for Logit
 
+[![Build Status](https://travis-ci.org/logit-io/fluent-plugin-logit.svg?branch=master)](https://travis-ci.org/logit-io/fluent-plugin-logit)
+
 This plugin is for Logit customers to send events securely to Logit.
 
 ## Installation
