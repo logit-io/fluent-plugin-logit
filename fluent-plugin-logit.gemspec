@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.email         = ["support@logit.io"]
   s.description   = %q{Logit output plugin for Fluentd}
   s.summary       = %q{Fluentd output plugin to store data with logit.io}
-  s.homepage      = "https://github.com/logit/fluent-plugin-logit"
+  s.homepage      = "https://github.com/logit-io/fluent-plugin-logit"
   s.license       = 'MIT'
 
   s.files         = `git ls-files`.split($/)
