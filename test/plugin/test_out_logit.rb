@@ -42,7 +42,7 @@ class TestTcpOutput < Test::Unit::TestCase
         end
       end
     end
-end
+  end
 
   def test_writes_to_default_index
     5.times.each do |t|
