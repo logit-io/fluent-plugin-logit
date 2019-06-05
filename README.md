@@ -13,7 +13,7 @@ This plugin is for Logit customers to send events securely to Logit.
 You need to configure the output with your stack_id and port number. See the source wizard for your configuration.
 
     <match **>
-      type logit
+      @type logit
       stack_id <your-stack-id>
       port <your-port>
       buffer_type file
